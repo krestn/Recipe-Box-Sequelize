@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       onDelete: "CASCADE",
       hooks: true,
     });
-    Recipe.hasMany(models.Ingredients, {
+    Recipe.hasMany(models.Ingredient, {
       foreignKey: "recipeId",
       onDelete: "CASCADE",
       hooks: true,

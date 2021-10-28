@@ -3,9 +3,24 @@ module.exports = (sequelize, DataTypes) => {
   const Instruction = sequelize.define(
     "Instruction",
     {
-      specification: DataTypes.TEXT,
-      listOrder: DataTypes.INTEGER,
-      recipeId: DataTypes.INTEGER,
+      specification: {
+        type: DataTypes.TEXT,
+        validate: {
+          notEmpty: true
+        }
+      },
+      listOrder: {
+        type: DataTypes.INTEGER,
+        validate: {
+          min: 1
+        }
+      },
+      recipeId: {
+        type: DataTypes.INTEGER,
+        validate: {
+          notNull: true
+        }
+      },
     },
     {}
   );

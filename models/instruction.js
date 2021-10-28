@@ -17,9 +17,7 @@ module.exports = (sequelize, DataTypes) => {
       },
       recipeId: {
         type: DataTypes.INTEGER,
-        validate: {
-          notNull: true,
-        },
+        validate: {},
       },
     },
     {}

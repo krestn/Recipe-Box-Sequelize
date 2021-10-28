@@ -6,16 +6,13 @@ module.exports = (sequelize, DataTypes) => {
       amount: {
         type: DataTypes.NUMERIC,
         validate: {
-          notNull: true,
           min: 0,
         },
       },
 
       measurementUnitId: {
         type: DataTypes.INTEGER,
-        validate: {
-          notNull: true,
-        },
+        validate: {},
       },
 
       foodStuff: {
@@ -27,9 +24,7 @@ module.exports = (sequelize, DataTypes) => {
 
       recipeId: {
         type: DataTypes.INTEGER,
-        validate: {
-          notNull: true,
-        },
+        validate: {},
       },
     },
     {}

@@ -6,20 +6,20 @@ module.exports = (sequelize, DataTypes) => {
       specification: {
         type: DataTypes.TEXT,
         validate: {
-          notEmpty: true
-        }
+          notEmpty: true,
+        },
       },
       listOrder: {
         type: DataTypes.INTEGER,
         validate: {
-          min: 1
-        }
+          min: 1,
+        },
       },
       recipeId: {
         type: DataTypes.INTEGER,
         validate: {
-          notNull: true
-        }
+          notNull: true,
+        },
       },
     },
     {}

@@ -7,29 +7,29 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.NUMERIC,
         validate: {
           notNull: true,
-          min: 0
-        }
+          min: 0,
+        },
       },
 
       measurementUnitId: {
         type: DataTypes.INTEGER,
         validate: {
-          notNull: true
-        }
+          notNull: true,
+        },
       },
 
       foodStuff: {
         type: DataTypes.STRING,
         validate: {
-          notEmpty: true
-        }
+          notEmpty: true,
+        },
       },
 
       recipeId: {
         type: DataTypes.INTEGER,
         validate: {
-          notNull: true
-        }
+          notNull: true,
+        },
       },
     },
     {}
